@@ -3,7 +3,7 @@
 xcode-select --install
 # Homebrew Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/leo/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Apps
 brew install google-chrome
@@ -48,6 +48,11 @@ gem install bundler
 gem install rails
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# Custom dot files
-
 echo Done! Homebrew has been successfully installed.
+echo Installing dot files
+git config --global core.excludesfile ~/.gitignore
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/tree/main/dotfiles/.gitignore
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/tree/main/dotfiles/.hushlogin
+sudo rm .zshrc
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/tree/main/dotfiles/.zshrc
+echo Done
