@@ -1,5 +1,5 @@
 # Brew setup
-#### This script installs all necessary requirements for web development
+#### This script installs all necessary requirements for web development.
 
 ## Requirements
 #### Mac Os
