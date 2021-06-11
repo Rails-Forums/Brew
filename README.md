@@ -13,6 +13,10 @@ Download the script
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstall.sh
 ```
 Execute the script
+To make the script executeable run 
+```
+chmod 755 ./brewinstall.sh
+```
 ```
 ./brewinstall.sh
 ```
