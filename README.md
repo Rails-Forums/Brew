@@ -8,12 +8,14 @@
 * macOS BigSur (11.0 - 11.4)
 
 ## Install
+Open termnial
+Go to launchpad click Other and click terminal 
 Download the script
 ```
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstall.sh
 ```
 Execute the script
-To make the script executeable run 
+To make the script executeable run
 ```
 chmod 755 ./brewinstall.sh
 ```
