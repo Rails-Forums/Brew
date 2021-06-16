@@ -38,6 +38,7 @@ brew install node@12
 brew install yarn
 brew install postgres
 brew install redis
+brew services start redis
 # Ruby
 brew install rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
