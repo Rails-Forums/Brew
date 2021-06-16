@@ -2,12 +2,11 @@
 # Xcode
 xcode-select --install
 # Homebrew Install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https ://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Apps
-brew install google-chrome
-brew install atom
+brew install --cask atom
 brew install --cask iterm2
 # Homebrew taps
 brew tap thoughtbot/formulae

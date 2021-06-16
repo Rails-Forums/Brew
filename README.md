@@ -1,5 +1,5 @@
 # Brew setup
-#### This script installs all necessary requirements for web development.
+#### This script installs all necessary requirements for web development. This script also sets up your dotfiles
 
 ## Requirements
 #### Mac Os
@@ -9,7 +9,8 @@
 
 ## Install
 Open termnial
-Go to launchpad click Other and click terminal 
+Go to launchpad click Other and click terminal
+
 Download the script
 ```
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstall.sh
@@ -22,3 +23,31 @@ chmod 755 ./brewinstall.sh
 ```
 ./brewinstall.sh
 ```
+
+## What it installs
+#### Apps
+* Atom
+* Iterm2
+#### Dependencies
+* gcc
+* git
+* openssl
+* rcm
+* reattach to user namespace
+* the_silver_searcher
+* tmux
+* vim
+* watchman
+* zsh
+* luarocks
+* heroku
+* parity
+* gh
+* imagemagick
+* libyaml
+* coreutils
+* node
+* yarn
+* postgres
+* redis
+* rbenv
