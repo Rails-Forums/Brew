@@ -8,20 +8,54 @@
 * macOS BigSur (11.0 - 11.4)
 
 ## Install
+#### This script is for the m1 macs.
 Open termnial
 Go to launchpad click Other and click terminal
 
 Download the script
 ```
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstall.sh
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstallm1.sh
 ```
 Execute the script
 To make the script executeable run
 ```
-chmod 755 ./brewinstall.sh
+chmod 755 ./brewinstallm1.sh
 ```
 ```
-./brewinstall.sh
+./brewinstallm1.sh
+```
+#### This script is for intel macs.
+Open termnial
+Go to launchpad click Other and click terminal
+
+Download the script
+```
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstallintell.sh
+```
+Execute the script
+To make the script executeable run
+```
+chmod 755 ./brewinstallintell.sh
+```
+```
+./brewinstallintell.sh
+```
+
+#### This script is for just YOUR user.
+Open termnial
+Go to launchpad click Other and click terminal
+
+Download the script
+```
+curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstalllocal.sh
+```
+Execute the script
+To make the script executeable run
+```
+chmod 755 ./brewinstalllocal.sh
+```
+```
+./brewinstalllocal.sh
 ```
 
 ## What it installs
