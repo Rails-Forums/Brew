@@ -102,4 +102,3 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
