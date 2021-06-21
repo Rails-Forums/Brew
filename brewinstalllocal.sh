@@ -45,8 +45,6 @@ brew install rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 rbenv install 3.0.1
 rbenv global 3.0.1
-gem install bundler
-gem install rails
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo Done! Homebrew has been successfully installed.
@@ -56,4 +54,7 @@ curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfil
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.hushlogin
 sudo rm .zshrc
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.zshrc
+source ~/.zshrc
+gem install rails
+gem install bundler
 echo Done
