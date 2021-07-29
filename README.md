@@ -1,11 +1,12 @@
 # Brew setup
-#### This script installs all necessary requirements for web development. This script also sets up your dotfiles
+#### This script installs all necessary requirements for web development. This script also sets up your dotfiles.
+#### Also when oh-my-zsh is installed type exit and the script will continue.
 
 ## Requirements
 #### Mac Os
 * macOS Mojave (10.14)
 * macOS Catalina (10.15)
-* macOS BigSur (11.0 - 11.4)
+* macOS BigSur (11.0 - 11.5.1)
 
 ## Install
 #### This script is for the m1 macs.

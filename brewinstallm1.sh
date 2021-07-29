@@ -51,9 +51,7 @@ echo Installing dot files
 git config --global core.excludesfile ~/.gitignore
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.gitignore
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.hushlogin
-sudo rm .zshrc
+rm .zshrc
 curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.zshrc
-source ~/.zshrc
-gem install rails
-gem install bundler
 echo Done
+exit
