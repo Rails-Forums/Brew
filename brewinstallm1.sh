@@ -49,9 +49,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 echo Done! Homebrew has been successfully installed.
 echo Installing dot files
 git config --global core.excludesfile ~/.gitignore
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.gitignore
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.hushlogin
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/dotfiles/.gitignore
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/dotfiles/.hushlogin
 rm .zshrc
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.zshrc
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/dotfiles/.zshrc
 echo Done
 exit
