@@ -15,7 +15,7 @@ Go to launchpad click Other and click terminal
 
 Download the script
 ```
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstallm1.sh
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallm1.sh
 ```
 Execute the script
 To make the script executeable run
@@ -31,7 +31,7 @@ Go to launchpad click Other and click terminal
 
 Download the script
 ```
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstallintell.sh
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallintell.sh
 ```
 Execute the script
 To make the script executeable run
@@ -48,7 +48,7 @@ Go to launchpad click Other and click terminal
 
 Download the script
 ```
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/brewinstalllocal.sh
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstalllocal.sh
 ```
 Execute the script
 To make the script executeable run
