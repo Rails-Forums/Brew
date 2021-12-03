@@ -6,7 +6,8 @@
 #### Mac Os
 * macOS Mojave (10.14)
 * macOS Catalina (10.15)
-* macOS BigSur (11.0 - 11.5.1)
+* macOS BigSur (11.0 - 11.6.1)
+* macOs Monterey (12.0 - 12.0.1)
 
 ## Install
 #### This script is for the m1 macs.
