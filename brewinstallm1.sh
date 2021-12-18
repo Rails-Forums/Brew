@@ -31,11 +31,9 @@ heroku autocomplete --refresh-cache
 brew install parity
 brew services start postgresql
 brew install gh
-brew install imagemagick
+brew install libvips
 brew install libyaml
 brew install coreutils
-brew install node@12
-brew install yarn
 brew install postgres
 brew install redis
 brew services start redis

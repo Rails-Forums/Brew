@@ -79,11 +79,9 @@ chmod 755 ./brewinstalllocal.sh
 * heroku
 * parity
 * gh
-* imagemagick
+* libvips
 * libyaml
 * coreutils
-* node
-* yarn
 * postgres
 * redis
 * rbenv
