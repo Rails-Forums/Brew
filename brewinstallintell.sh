@@ -40,8 +40,8 @@ brew services start redis
 # Ruby
 brew install rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-rbenv install 3.1.0
-rbenv global 3.1.0
+rbenv install 3.1.1
+rbenv global 3.1.1
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo Done! Homebrew has been successfully installed.
