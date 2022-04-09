@@ -30,7 +30,8 @@ brew install luarocks
 brew install heroku/brew/heroku
 heroku autocomplete --refresh-cache
 brew install parity
-brew services start postgresql
+brew install postgresql@13
+brew services start postgresql@13
 brew install gh
 brew install libvips
 brew install libyaml
