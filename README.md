@@ -9,6 +9,12 @@
 * macOS BigSur (11.0 - 11.6.1)
 * macOs Monterey (12.0 - 12.3.1)
 
+#### Ubuntu
+* Ubuntu 18.04 LTS
+* Ubuntu 20.04 LTS
+* Ubuntu 21.10
+* Ubuntu 22.04 LTS
+
 ## Install
 #### This script is for the m1 macs.
 Open termnial
@@ -42,8 +48,16 @@ chmod 755 ./brewinstallintell.sh
 ```
 ./brewinstallintell.sh
 ```
+#### This script is for ubuntu.
+Open terminal
 
-#### This script is for just YOUR user.
+Download the script
+```
+curl --remote-name
+```
+#### This script is for just YOUR user Ubuntu.
+
+#### This script is for just YOUR user MacOs.
 Open termnial
 Go to launchpad click Other and click terminal
 
