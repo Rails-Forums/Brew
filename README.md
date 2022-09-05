@@ -6,14 +6,8 @@
 #### Mac Os
 * macOS Mojave (10.14)
 * macOS Catalina (10.15)
-* macOS BigSur (11.0 - 11.6.1)
-* macOs Monterey (12.0 - 12.3.1)
-
-#### Ubuntu
-* Ubuntu 18.04 LTS
-* Ubuntu 20.04 LTS
-* Ubuntu 21.10
-* Ubuntu 22.04 LTS
+* macOS BigSur (11.0 - 11.6.8)
+* macOs Monterey(12.0 - 12.5.1)
 
 ## Install
 #### This script is for the m1 macs.
@@ -55,8 +49,6 @@ Download the script
 ```
 curl --remote-name
 ```
-#### This script is for just YOUR user Ubuntu.
-
 #### This script is for just YOUR user MacOs.
 Open termnial
 Go to launchpad click Other and click terminal
@@ -78,6 +70,7 @@ chmod 755 ./brewinstalllocal.sh
 #### Apps
 * Atom
 * Iterm2
+* VsCode
 #### Dependencies
 * gcc
 * git

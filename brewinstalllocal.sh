@@ -9,6 +9,7 @@ brew update
 # Apps
 brew install --cask atom
 brew install --cask iterm2
+brew install --cask visual-studio-code
 # Homebrew taps
 brew tap thoughtbot/formulae
 brew tap homebrew/services
@@ -26,6 +27,9 @@ brew install tmux
 brew install vim
 brew install watchman
 brew install zsh
+brew install node
+brew install node@12
+brew install yarn
 brew install luarocks
 brew install heroku/brew/heroku
 heroku autocomplete --refresh-cache
@@ -49,9 +53,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 echo Done! Homebrew has been successfully installed.
 echo Installing dot files
 git config --global core.excludesfile ~/.gitignore
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.gitignore
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.hushlogin
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.gitignore
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.hushlogin
 rm .zshrc
-curl --remote-name https://raw.githubusercontent.com/leo-midili/brew/main/dotfiles/.zshrc
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.zshrc
 echo Done
 exit
