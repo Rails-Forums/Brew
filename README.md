@@ -4,10 +4,10 @@
 
 ## Requirements
 #### Mac Os
-* macOS Mojave (10.14)
-* macOS Catalina (10.15)
-* macOS BigSur (11.0 - 11.6.8)
-* macOs Monterey(12.0 - 12.5.1)
+* macOS Mojave
+* macOS Catalina
+* macOS BigSur
+* macOs Monterey
 
 ## Install
 #### This script is for the m1 macs.
@@ -83,6 +83,7 @@ chmod 755 ./brewinstalllocal.sh
 * watchman
 * zsh
 * luarocks
+* railway
 * heroku
 * parity
 * gh

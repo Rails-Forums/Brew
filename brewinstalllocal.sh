@@ -31,11 +31,12 @@ brew install node
 brew install node@12
 brew install yarn
 brew install luarocks
+brew install railwayapp/railway/railway
 brew install heroku/brew/heroku
 heroku autocomplete --refresh-cache
 brew install parity
-brew install postgresql@13
-brew services start postgresql@13
+brew install postgresql@14
+brew services start postgresql@14
 brew install gh
 brew install libvips
 brew install libyaml
