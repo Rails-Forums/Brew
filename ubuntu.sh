@@ -20,3 +20,8 @@ gem install rails
 rbenv rehash
 # Railway - As it is free compared to Herkou nowadays
 sudo npm i -g @railway/cli
+
+# Change username to any username you would like
+sudo -u postgres createuser username -s
+sudo -u postgres psql
+postgres=# \password username
