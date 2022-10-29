@@ -22,13 +22,7 @@ Go to launchpad click Other and click terminal
 Download the script
 ```
 curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallm1.sh
-```
-Execute the script
-To make the script executeable run
-```
 chmod 755 ./brewinstallm1.sh
-```
-```
 ./brewinstallm1.sh
 ```
 #### This script is for intel macs.
@@ -38,13 +32,7 @@ Go to launchpad click Other and click terminal
 Download the script
 ```
 curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallintell.sh
-```
-Execute the script
-To make the script executeable run
-```
 chmod 755 ./brewinstallintell.sh
-```
-```
 ./brewinstallintell.sh
 ```
 #### This script is for just YOUR user MacOs.
@@ -54,13 +42,7 @@ Go to launchpad click Other and click terminal
 Download the script
 ```
 curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstalllocal.sh
-```
-Execute the script
-To make the script executeable run
-```
 chmod 755 ./brewinstalllocal.sh
-```
-```
 ./brewinstalllocal.sh
 ```
 
@@ -69,15 +51,8 @@ Open terminal
 
 Download the script
 ```
-curl --remote-name
-```
-
-Execute the script
-To make the script executeable run
-```
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/ubuntu.sh
 chmod +x ./ubuntu.sh
-```
-```
 ./ubuntu.sh
 ```
 #### After the Ubuntu script runs
