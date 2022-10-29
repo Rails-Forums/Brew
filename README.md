@@ -2,12 +2,17 @@
 #### This script installs all necessary requirements for web development. This script also sets up your dotfiles.
 #### Also when oh-my-zsh is installed type exit and the script will continue.
 
+#### For Ubuntu there is 3-4 commands you need to run yourself AFTER the script is finshed which will be down below.
+
 ## Requirements
 #### Mac Os
 * macOS Mojave
 * macOS Catalina
 * macOS BigSur
 * macOs Monterey
+#### Ubuntu
+* Most major versions
+* ALSO COMPATABLE WITH ARM 
 
 ## Install
 #### This script is for the m1 macs.
@@ -42,13 +47,6 @@ chmod 755 ./brewinstallintell.sh
 ```
 ./brewinstallintell.sh
 ```
-#### This script is for ubuntu.
-Open terminal
-
-Download the script
-```
-curl --remote-name
-```
 #### This script is for just YOUR user MacOs.
 Open termnial
 Go to launchpad click Other and click terminal
@@ -64,6 +62,30 @@ chmod 755 ./brewinstalllocal.sh
 ```
 ```
 ./brewinstalllocal.sh
+```
+
+#### This script is for ubuntu.
+Open terminal
+
+Download the script
+```
+curl --remote-name
+```
+
+Execute the script
+To make the script executeable run
+```
+chmod +x ./ubuntu.sh
+```
+```
+./ubuntu.sh
+```
+#### After the Ubuntu script runs
+```
+# Change username to any username you would like
+sudo -u postgres createuser username -s
+sudo -u postgres psql
+postgres=# \password username
 ```
 
 ## What it installs

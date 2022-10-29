@@ -33,7 +33,6 @@ brew install yarn
 brew install luarocks
 brew install railwayapp/railway/railway
 brew install heroku/brew/heroku
-heroku autocomplete --refresh-cache
 brew install parity
 brew install postgresql@14
 brew services start postgresql@14
