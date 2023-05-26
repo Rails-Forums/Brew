@@ -43,10 +43,6 @@ chmod 755 ./brewinstalllocal.sh
 
 
 ## What it installs
-#### Apps
-* Atom
-* Iterm2
-* VsCode
 #### Dependencies
 * gcc
 * git

@@ -6,7 +6,6 @@ xcode-select --install
 echo 'eval "$(/usr/local/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/usr/local/homebrew/bin/brew shellenv)"
 # Apps
-brew install --cask atom
 brew install --cask iterm2
 brew install --cask visual-studio-code
 # Homebrew taps
@@ -45,16 +44,15 @@ brew services start redis
 # Ruby
 brew install rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-rbenv install 3.1.2
-rbenv global 3.1.2
+rbenv install 3.2.2
+rbenv global 3.2.2
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo Done! Homebrew has been successfully installed.
 echo Installing dot files
 git config --global core.excludesfile ~/.gitignore
-curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.gitignore
-curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.hushlogin
-rm .zshrc
-curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.zshrc
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.gitignore ~/.gitignore
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.hushlogin ~/.hushlogin
+rm ~/.zshrc
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.zshrc ~/.zshrc
 echo Done
 exit
