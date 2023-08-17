@@ -18,6 +18,7 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install gcc
 brew install git
 brew install openssl
+brew install openssl@3
 brew install rcm
 brew install reattach-to-user-namespace
 brew install the_silver_searcher
@@ -43,7 +44,7 @@ brew install redis
 brew services start redis
 # Ruby
 brew install rbenv
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 rbenv install 3.2.2
 rbenv global 3.2.2
 # Oh My Zsh

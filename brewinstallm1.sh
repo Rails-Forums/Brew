@@ -43,7 +43,7 @@ brew services start redis
 
 # Ruby
 brew install rbenv
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 rbenv install 3.2.2
 rbenv global 3.2.2
 
