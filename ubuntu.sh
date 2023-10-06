@@ -1,27 +1,57 @@
-# Node and Yarn Plus alot of Main packages
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update
-sudo apt install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn  libpcre3 libpcre3-dev imagemagick postgresql-14 libpq-dev
-# Ruby with Rbenv 
-cd
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-rbenv install 3.1.2
-rbenv global 3.1.2
-# The gem installs
-gem install bundler
-gem install rails
-rbenv rehash
-# Railway - As it is free compared to Herkou nowadays
-sudo npm i -g @railway/cli
+#!/bin/sh
+# Homebrew Install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Change username to any username you would like
-sudo -u postgres createuser username -s
-sudo -u postgres psql
-postgres=# \password username
+# Homebrew taps
+brew tap thoughtbot/formulae
+brew tap homebrew/services
+brew tap universal-ctags/universal-ctags
+brew tap heroku/brew
+
+# Brew install web devloment dependices
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install gcc
+brew install git
+brew install openssl
+brew install rcm
+brew install reattach-to-user-namespace
+brew install the_silver_searcher
+brew install tmux
+brew install vim
+brew install watchman
+brew install zsh
+brew install node
+brew install node@14
+brew install yarn
+brew install luarocks
+brew install railwayapp/railway/railway
+brew install heroku/brew/heroku
+brew install parity
+brew install postgresql@14
+brew services start postgresql@14
+brew install gh
+brew install libvips
+brew install libyaml
+brew install coreutils
+brew install postgres
+brew install redis
+brew services start redis
+
+# Ruby
+brew install rbenv
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
+rbenv install 3.2.2
+rbenv global 3.2.2
+
+# Oh My Zsh
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# echo Installing dot files
+# git config --global core.excludesfile ~/.gitignore
+# curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.gitignore ~/.gitignore
+# curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.hushlogin ~/.hushlogin
+# rm ~/.zshrc
+# curl --remote-name https://raw.githubusercontent.com/Rails-Forums/brew/main/dotfiles/.zshrc ~/.zshrc
+echo Done
+exit

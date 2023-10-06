@@ -4,11 +4,13 @@
 
 ## Requirements
 #### Mac Os
-* macOS Mojave
-* macOS Catalina
-* macOS BigSur
-* macOs Monterey
-* macOs Ventura
+* macOS Mojave 10.14
+* macOS Catalina 10.15
+* macOS BigSur 11 
+* macOs Monterey 12
+* macOs Ventura 13
+* macOs Sonoma 14
+
 ## Install
 #### This script is for the m1 macs.
 Open termnial
@@ -40,7 +42,6 @@ curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brew
 chmod 755 ./brewinstalllocal.sh
 ./brewinstalllocal.sh
 ```
-
 
 ## What it installs
 #### Dependencies

@@ -26,7 +26,7 @@ brew install vim
 brew install watchman
 brew install zsh
 brew install node
-brew install node@12
+brew install node@14
 brew install yarn
 brew install luarocks
 brew install railwayapp/railway/railway
