@@ -12,15 +12,15 @@
 * macOs Sonoma 14
 
 ## Install
-#### This script is for the m1 macs.
+#### This script is for all Apple Silicon macs.
 Open termnial
 Go to launchpad click Other and click terminal
 
 Download the script
 ```
-curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallm1.sh
-chmod 755 ./brewinstallm1.sh
-./brewinstallm1.sh
+curl --remote-name https://raw.githubusercontent.com/Rails-Forums/Brew/main/brewinstallsilicon.sh
+chmod 755 ./brewinstallsilicon.sh
+./brewinstallsilicon.sh
 ```
 #### This script is for intel macs.
 Open termnial
