@@ -36,41 +36,41 @@ brew tap homebrew/services
 brew tap universal-ctags/universal-ctags
 
 # Web Broswers
-if test "CHROME" = "y"; then
+if test "$CHROME" = "y"; then
   brew install --cask google-chrome
 fi;
 
-if test "FIREFOX" = "y"; then
+if test "$FIREFOX" = "y"; then
   brew install --cask firefox
 fi;
 
-if test "EDGE" = "y"; then
+if test "$EDGE" = "y"; then
   brew install --cask microsoft-edge
 fi;
 
 # Text editors
-if test "ATOM" = "y"; then
+if test "$ATOM" = "y"; then
   brew install --cask atom
 fi;
 
-if test "VSCODE" = "y"; then
+if test "$VSCODE" = "y"; then
   brew install --cask visual-studio-code
 fi;
 
-if test "MINE" = "y"; then
+if test "$MINE" = "y"; then
   brew install --cask rubymine
 fi;
 
 # Terminal
-if test "ITERM" = "y"; then
+if test "$ITERM" = "y"; then
   brew install --cask iterm2
 fi;
 
-if test "WARP" = "y"; then
+if test "$WARP" = "y"; then
   brew install --cask warp
 fi;
 
-if test "HYPER" = "y"; then
+if test "$HYPER" = "y"; then
   brew install --cask hyper
 fi;
 
