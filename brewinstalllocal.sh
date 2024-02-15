@@ -9,17 +9,17 @@ read -p "Would you like to have rbenv installed? y/n " RBENV
 echo "Asdf is a package manger this can install ruby for you and also node if you'd prefer to use it instead of brews"
 read -p "Would you like to have asdf installed? y/n " ASDF
 echo "Next are a list of browsers you could install"
-read -p "Would you like to install Google Chrome y/n" CHROME
-read -p "Would you like to install Firefox y/n" FIREFOX
-read -p "Would you like to install Microsoft Edge" EDGE
+read -p "Would you like to install Google Chrome y/n " CHROME
+read -p "Would you like to install Firefox y/n " FIREFOX
+read -p "Would you like to install Microsoft Edge y/n " EDGE
 echo "Next are a list of some text editors you could install"
-read -p "Would you like to install Atom" ATOM
-read -p "Would you like to install Vscode" VSCODE
-read -p "Would you like to install RubyMine" MINE
+read -p "Would you like to install Atom y/n " ATOM
+read -p "Would you like to install Vscode y/n " VSCODE
+read -p "Would you like to install RubyMine y/n " MINE
 echo "Lastly is a list of terminals that you can choose from"
-read -p "Would you like to install iTerm2" ITERM
-read -p "Would you like to install Warp" WARP
-read -p "Would you like to install Hyper" HYPER
+read -p "Would you like to install iTerm2 y/n " ITERM
+read -p "Would you like to install Warp y/n " WARP
+read -p "Would you like to install Hyper y/n " HYPER
 
 # Xcode
 xcode-select --install
