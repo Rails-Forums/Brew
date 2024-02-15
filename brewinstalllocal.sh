@@ -8,6 +8,18 @@ echo "Rbenv is a ruby package manger this can install ruby for you to have every
 read -p "Would you like to have rbenv installed? y/n " RBENV
 echo "Asdf is a package manger this can install ruby for you and also node if you'd prefer to use it instead of brews"
 read -p "Would you like to have asdf installed? y/n " ASDF
+echo "Next are a list of browsers you could install"
+read -p "Would you like to install Google Chrome y/n" CHROME
+read -p "Would you like to install Firefox y/n" FIREFOX
+read -p "Would you like to install Microsoft Edge" EDGE
+echo "Next are a list of some text editors you could install"
+read -p "Would you like to install Atom" ATOM
+read -p "Would you like to install Vscode" VSCODE
+read -p "Would you like to install RubyMine" MINE
+echo "Lastly is a list of terminals that you can choose from"
+read -p "Would you like to install iTerm2" ITERM
+read -p "Would you like to install Warp" WARP
+read -p "Would you like to install Hyper" HYPER
 
 # Xcode
 xcode-select --install
@@ -15,12 +27,52 @@ xcode-select --install
 mkdir ~/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 echo 'eval "$($HOME/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$($HOME/homebrew/bin/brew shellenv)"
+export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
 brew update
 
 # Homebrew taps
 brew tap thoughtbot/formulae
 brew tap homebrew/services
 brew tap universal-ctags/universal-ctags
+
+# Web Broswers
+if test "CHROME" = "y"; then
+  brew install --cask google-chrome
+fi;
+
+if test "FIREFOX" = "y"; then
+  brew install --cask firefox
+fi;
+
+if test "EDGE" = "y"; then
+  brew install --cask microsoft-edge
+fi;
+
+# Text editors
+if test "ATOM" = "y"; then
+  brew install --cask atom
+fi;
+
+if test "VSCODE" = "y"; then
+  brew install --cask visual-studio-code
+fi;
+
+if test "MINE" = "y"; then
+  brew install --cask rubymine
+fi;
+
+# Terminal
+if test "ITERM" = "y"; then
+  brew install --cask iterm2
+fi;
+
+if test "WARP" = "y"; then
+  brew install --cask warp
+fi;
+
+if test "HYPER" = "y"; then
+  brew install --cask hyper
+fi;
 
 # Brew install web devloment dependices
 brew install pcre

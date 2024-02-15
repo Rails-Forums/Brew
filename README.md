@@ -44,6 +44,21 @@ chmod 755 ./brewinstalllocal.sh
 ```
 
 ## What it installs
+#### Web Broswers
+*  Google Chrome
+*  Firefox
+*  Microsoft Edge
+
+#### Text editors
+* Atom
+* Vscode
+* RubyMine
+
+#### Terminal
+* Iterm2
+* Warp
+* Hyper
+
 #### Dependencies
 * gcc
 * git
