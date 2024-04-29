@@ -1,8 +1,8 @@
 #!/bin/sh
 # Homebrew Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/ubuntu/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Homebrew taps
 brew tap thoughtbot/formulae
@@ -12,7 +12,7 @@ brew tap heroku/brew
 
 # Brew install web devloment dependices
 brew install pcre
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install universal-ctags
 brew install gcc
 brew install git
 brew install openssl
