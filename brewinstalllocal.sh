@@ -12,6 +12,7 @@ echo "Next are a list of browsers you could install"
 read -p "Would you like to install Google Chrome y/n " CHROME
 read -p "Would you like to install Firefox y/n " FIREFOX
 read -p "Would you like to install Microsoft Edge y/n " EDGE
+read -p "Would you like to install Opera y/n" OPERA
 echo "Next are a list of some text editors you could install"
 read -p "Would you like to install Atom y/n " ATOM
 read -p "Would you like to install Vscode y/n " VSCODE
@@ -34,31 +35,43 @@ brew update
 brew tap thoughtbot/formulae
 brew tap homebrew/services
 brew tap universal-ctags/universal-ctags
+brew install dockutil
 
 # Web Broswers
 if test "$CHROME" = "y"; then
   brew install --cask google-chrome
+  dockutil --add /Applications/Google\ Chrome.app
 fi;
 
 if test "$FIREFOX" = "y"; then
   brew install --cask firefox
+  dockutil --add /Applications/Firefox.app
 fi;
 
 if test "$EDGE" = "y"; then
   brew install --cask microsoft-edge
+  dockutil --add /Applications/Microsoft\ Edge.app
+fi;
+
+if test "$OPERA" = "y"; then
+   brew install --cask opera
+   dockutil --add /Applications/Opera.app
 fi;
 
 # Text editors
 if test "$ATOM" = "y"; then
   brew install --cask atom
+  dockutil --add /Applications/Atom.app
 fi;
 
 if test "$VSCODE" = "y"; then
   brew install --cask visual-studio-code
+  dockutil --add /Applications/Visual\ Studio\ Code.app
 fi;
 
 if test "$MINE" = "y"; then
   brew install --cask rubymine
+  dockutil --add /Applications/RubyMine.app
 fi;
 
 # Terminal
@@ -68,10 +81,12 @@ fi;
 
 if test "$WARP" = "y"; then
   brew install --cask warp
+  dockutil --add /Applications/Warp.app
 fi;
 
 if test "$HYPER" = "y"; then
   brew install --cask hyper
+  dockutil --add /Applications/Hyper.app
 fi;
 
 # Brew install web devloment dependices
@@ -115,8 +130,8 @@ brew services start redis
 if test "$RBENV" = "y"; then
     brew install rbenv
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-    rbenv install 3.3.1
-    rbenv global 3.3.1
+    rbenv install 3.3.2
+    rbenv global 3.3.2
 fi;
 
 if test "$ASDF" = "y"; then
