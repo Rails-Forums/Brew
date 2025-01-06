@@ -130,8 +130,8 @@ brew services start redis
 if test "$RBENV" = "y"; then
     brew install rbenv
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-    rbenv install 3.3.6
-    rbenv global 3.3.6
+    rbenv install 3.4.1
+    rbenv global 3.4.1
 fi;
 
 if test "$ASDF" = "y"; then
